@@ -1,0 +1,1 @@
+export type Props<T = any> = { props: T };

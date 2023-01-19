@@ -24,22 +24,22 @@ export default function Navbar() {
                         <NavbarMenuButton message="Features">
                             <div>Hello world</div>
                         </NavbarMenuButton>
-                        <Button color="neutral" variant="plain" size="sm" component="a" href="#">
+                        <Button color="neutral" variant="plain" size="sm" component={Link} href="/pricing">
                             <span>Pricing</span>
                         </Button>
-                        <Button color="neutral" variant="plain" size="sm" component="a" href="#">
+                        <Button color="neutral" variant="plain" size="sm" component={Link} href="#">
                             <span>Contact</span>
                         </Button>
-                        <Button color="neutral" variant="plain" size="sm" component="a" href="blog">
+                        <Button color="neutral" variant="plain" size="sm" component={Link} href="/blog">
                             <span>Blog</span>
                         </Button>
                     </nav>
 
                     <nav className="hidden lg:flex items-center justify-center gap-2">
-                        <Button color="neutral" variant="plain" size="sm" component="a" href="#">
+                        <Button color="neutral" variant="plain" size="sm" component={Link} href="#">
                             <span>Sign in</span>
                         </Button>
-                        <Button color="primary" variant="solid" size="sm" component="a" href="#">
+                        <Button color="primary" variant="solid" size="sm" component={Link} href="#">
                             <span>Get started</span>
                         </Button>
                     </nav>

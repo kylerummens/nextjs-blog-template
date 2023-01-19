@@ -2,10 +2,14 @@ import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import '@/styles/globals.css';
 import '@fontsource/public-sans';
+import { Roboto_Mono } from '@next/font/google';
 import { CssVarsProvider, extendTheme } from '@mui/joy/styles';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import CssBaseline from '@mui/joy/CssBaseline';
+
+const roboto_mono = Roboto_Mono({ subsets: ['latin'] })
+
 
 const theme = extendTheme({
   components: {
@@ -36,6 +40,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <style jsx global>{`
+        .date {
+          font-family: ${roboto_mono.style.fontFamily};
+        }
+      `}</style>
       <CssVarsProvider theme={theme}>
         <CssBaseline />
 

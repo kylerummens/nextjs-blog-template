@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Button from '@mui/joy/Button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         <h1 className="text-3xl font-bold underline">
           Hello world! asdf
         </h1>
+
+        <Link href="/pricing">Go to pricing</Link>
 
         <div className="h-96"></div>
       </main>

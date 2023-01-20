@@ -1,5 +1,5 @@
 import Copyright from "./copyright";
-import logo_dark from '../../public/logo-landscape-dark-theme.svg';
+import logo_dark from '../../../public/logo-landscape-dark-theme.svg';
 import Link from "next/link";
 import Image from 'next/image';
 

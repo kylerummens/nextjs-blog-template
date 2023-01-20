@@ -1,4 +1,4 @@
-import { supabase } from "@/supabase-client";
+import { supabase } from "@/configs/supabase-client";
 
 export const getBlogPostPublicIds = async (): Promise<string[]> => {
     const { data } = await supabase

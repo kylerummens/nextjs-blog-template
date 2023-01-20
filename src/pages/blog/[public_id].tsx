@@ -45,6 +45,7 @@ const BlogPost: ElementType<{ post: BlogPostWithAuthor }> = ({ post }) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const public_id = Array.isArray(context.params!.public_id) ? context.params!.public_id[0] : context.params!.public_id!;
+    console.log(public_id);
     const post = await getBlogPost(public_id);
 
     return {

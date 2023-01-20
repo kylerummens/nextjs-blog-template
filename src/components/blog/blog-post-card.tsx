@@ -8,9 +8,9 @@ const BlogPostCard: ElementType<{ post: BlogPostWithAuthor }> = ({ post }) => {
 
     return (
         <Link href={`/blog/${post.public_id}`}>
-            <div className="bg-gray-50 w-full h-96 rounded-3xl shadow overflow-hidden hover:bg-blue-500/10 transition-all group">
+            <div className="bg-gray-50 w-full h-96 rounded-3xl shadow overflow-hidden hover:bg-blue-500/10 transition-all">
                 <div className="overflow-hidden rounded-3xl relative h-48 w-full">
-                    <Image className="object-cover transition-transform group-hover:scale-105" fill src={ post.image } alt={'Image for ' + post.title} />
+                    <Image className="object-cover" fill src={ post.image } alt={'Image for ' + post.title} />
                 </div>
                 <div className="px-4 py-6">
                     <div className="mb-2">

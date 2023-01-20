@@ -1,5 +1,5 @@
 import { BlogPostWithAuthor } from "@/models/blog.types";
-import { supabase } from "@/supabase-client";
+import { supabase } from "@/configs/supabase-client";
 
 export const getBlogPost = async (public_id: string): Promise<BlogPostWithAuthor | null> => {
 
